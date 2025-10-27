@@ -1,1 +1,17 @@
 
+# Compact resource list
+
+* Nmap — host/port/service discovery & version detection. [https://nmap.org](https://nmap.org)
+* Masscan — extremely fast Internet-wide port scanner. [https://github.com/robertdavidgraham/masscan](https://github.com/robertdavidgraham/masscan)
+* ZMap — high-speed network scanner for research. [https://zmap.io](https://zmap.io)
+* Wireshark — packet capture and protocol analysis. [https://www.wireshark.org](https://www.wireshark.org)
+* Kismet — passive wireless sniffer / wardriving / WIDS. [https://www.kismetwireless.net](https://www.kismetwireless.net)
+* Aircrack-ng (incl. airodump-ng) — 802.11 packet capture and analysis tools. [https://www.aircrack-ng.org](https://www.aircrack-ng.org)
+* Shodan — Internet-scale service/banner search engine. [https://www.shodan.io](https://www.shodan.io)
+* Censys — searchable internet-host/service index. [https://censys.io](https://censys.io)
+* Wigle — SSID / BSSID mapping and wardrive database. [https://wigle.net](https://wigle.net)
+* Masscan/Nmap scripting helpers: Nikto (web scanner) — [https://github.com/sullo/nikto](https://github.com/sullo/nikto)
+* OpenVAS / Greenbone — open-source vulnerability scanning / management. [https://www.greenbone.net](https://www.greenbone.net) (or [https://www.openvas.org](https://www.openvas.org))
+* Nmap NSE & scripting resources — [https://nmap.org/book/nse.html](https://nmap.org/book/nse.html)
+
+
