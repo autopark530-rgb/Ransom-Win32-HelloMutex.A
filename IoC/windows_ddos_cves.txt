@@ -1,0 +1,6 @@
+CVE-2025-21207 - Windows Connected Devices Platform Service (Cdpsvc) - DoS (HIGH, 7.5) - Apply Microsoft update/advisory. Link: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21207
+CVE-2025-21174 - Standards-Based Storage Management Service - Resource exhaustion DoS (HIGH, 7.5) - Apply Microsoft patch; isolate management service. Link: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21174
+CVE-2025-26682 - ASP.NET Core - Resource allocation without throttling, remote DoS (HIGH) - Patch ASP.NET/.NET, add rate limiting. Link: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26682
+CVE-2025-32724 - Windows Active Directory / Domain Controller memory exhaustion (Win-DDoS family) - Patch Microsoft advisory; restrict exposure of DC RPC/LDAP endpoints. Link: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32724
+CVE-2025-49716 - Windows Kerberos / Netlogon DoS - Patch Microsoft updates; restrict access to authentication services. Link: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49716
+CVE-2025-47978 - Windows Kerberos / Netlogon DoS - Patch Microsoft updates; monitor authentication failure spikes. Link: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47978
