@@ -1,0 +1,81 @@
+Open source intelligence 
+
+Here’s your fillable prompt version of the “Basic OSINT & SIGINT Checklist for a Single-Person Target.”
+Each section includes short, directive prompts you can copy directly into your workspace or agent input fields to standardize collection, reasoning, and reporting.
+
+⸻
+
+🛰️ BASIC OSINT & SIGINT PROMPT TEMPLATE
+
+Objective: Structured information gathering on a single individual using only legal, ethical, and publicly available data sources.
+(Designed for analytical exercises, red-team scoping, or AI-assisted OSINT modules.)
+
+⸻
+
+PART 1 — OSINT PROMPTS
+
+1. Identity
+Prompt:
+
+Identify the subject’s full legal name, known aliases, usernames, and nicknames. Estimate possible birth date range, nationality, or citizenship based on available open data. Summarize confidence level for each field.
+
+2. Social Media & Online Presence
+Prompt:
+
+Enumerate all social media accounts linked to the subject’s known identifiers (Facebook, Instagram, Twitter/X, LinkedIn, TikTok, Reddit, etc.). Evaluate username consistency, notable posts, geotags, and recurring online behavior patterns. Note any cross-platform identity signals.
+
+3. Public Records
+Prompt:
+
+Search legal, property, and business registration databases for public records tied to the subject’s identity. Include type of record, date, and jurisdiction. Identify professional licenses or business affiliations visible in public filings.
+
+4. Media & Mentions
+Prompt:
+
+Collect media references such as news articles, blog mentions, podcast appearances, or interviews. Summarize each source’s relevance and date, and note any thematic connections between them.
+
+5. Communication & Contact Info
+Prompt:
+
+Identify publicly listed contact details—email addresses, phone numbers, or websites. Check for reused handles or domains. Include metadata hints (e.g., creation dates or registrar information) when available.
+
+6. Relationships & Networks
+Prompt:
+
+Map visible connections: friends, followers, associates, or organizations the subject interacts with publicly. Categorize links (personal, professional, community-based). Look for recurring overlaps in geography or shared accounts.
+
+7. Documentation
+Prompt:
+
+Record findings with timestamps, URLs, and screenshot identifiers. Ensure consistent foldering or tagging for traceability. Note any data reliability concerns or duplicate sources.
+
+⸻
+
+PART 2 — SIGINT (Passive-Only) PROMPTS
+
+1. Device & Network Footprints
+Prompt:
+
+Identify any publicly visible IPs, devices, or identifiers associated with the subject’s online presence. Extract and analyze metadata from available files or images to infer possible device types or software sources.
+
+2. Communication Channels
+Prompt:
+
+Examine public email headers, SPF/DKIM/DMARC records, and metadata from social media or messaging platforms to infer communication behavior or app usage (posting times, clients used). Do not access private or restricted data.
+
+3. Network Analysis
+Prompt:
+
+Map network relationships between personal domains, websites, and services. Retrieve WHOIS, DNS, and hosting information for consented or publicly visible infrastructure. Note patterns in IP ranges, registrars, or providers.
+
+4. Threat Surface Mapping
+Prompt:
+
+Identify publicly exposed endpoints—APIs, login portals, or open services discoverable via platforms like Shodan or Censys (for consented or self-owned infrastructure only). Summarize visible risk indicators without probing.
+
+5. Documentation & Cross-Correlation
+Prompt:
+
+Maintain a time-stamped log of all SIGINT-relevant data. Cross-reference IPs, domains, and metadata with OSINT findings to identify behavioral or temporal patterns. Summarize key correlations and confidence levels.
+
+⸻

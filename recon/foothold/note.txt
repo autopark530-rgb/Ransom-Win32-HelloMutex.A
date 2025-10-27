@@ -1,0 +1,71 @@
+Good question — there are a handful of services and tools that *aggregate* Wi‑Fi beacon data (SSIDs, BSSIDs/MACs, and approximate geolocation) collected by wardrivers or devices and make that dataset searchable, and a different set of tools used for *on‑site* scanning and for legitimate device‑management. Below I’ll list the main remote databases, what they can and *cannot* do, legal/ethical guidance, and safer alternatives if your goal is legitimate (device recovery, asset inventory, research).
+
+**Short legal / ethics note (read first)**
+Collecting or using Wi‑Fi/BSSID data to track or target private individuals or private residences without authorization can be illegal and harmful. Use these tools only for lawful purposes (research with consent, lost‑device recovery using your own account, corporate asset inventory where you have permission, or public research). If you aren’t authorized, stop and use the safe alternatives below.
+
+---
+
+# Remote / crowd‑sourced Wi‑Fi databases
+
+These compile wardriving and user‑contributed scans and allow remote lookup of SSID/BSSID → approximate location.
+
+* **WiGLE** — the best‑known crowd‑sourced database (web UI + API). Stores SSIDs, BSSIDs and GPS coordinates submitted by users. Good for historical/large‑scale lookups; requires an account and has usage policies.
+  *Limitations*: coverage depends on contributors; location may be stale; privacy rules apply.
+
+* **Mozilla Location Service (MLS)** — open geolocation service that aggregates cell & Wi‑Fi data and provides an API for positioning. Intended to power geolocation in apps. Requires an API key and usage must follow MLS terms.
+  *Limitations*: not a simple SSID search UI; intended for positioning (give a list of observed BSSIDs, get a lat/long back).
+
+* **OpenWiFi / OpenWiFiMap / community projects** — several smaller/open projects and maps exist that collect public Wi‑Fi info. Coverage and reliability vary widely.
+
+* **Commercial geolocation providers (Skyhook, Unwired Labs, HERE, etc.)** — enterprise services that hold large Wi‑Fi/cell towers databases used for location services. Usually paid and for developers/enterprises. Not directly searchable as a public SSID lookup.
+
+**What they cannot do remotely:** discover SSIDs/BSSIDs that have never been collected by contributors, reveal client MACs or traffic, or provide precise up‑to‑the‑minute physical presence unless someone recently scanned that AP. Layer‑2 wifi frames (beacons, real‑time clients) require local radio capture.
+
+---
+
+# On‑site / software tools (require physical proximity or permission)
+
+If you are *on site* or are authorized to scan, these are the standard tools:
+
+* **Kismet** — passive Wi‑Fi/ble/sniffer, great for mapping SSIDs/BSSIDs and client relationships. Runs on Linux and supports many USB Wi‑Fi adapters.
+* **Aircrack‑ng suite (airodump‑ng)** — classic set for passive capture of beacons and client probe/association frames.
+* **NetSpot / Ekahau / AirMagnet** — GUI site‑survey tools used by admins to map coverage, channels, interference, and connected clients (Ekahau / AirMagnet are commercial).
+* **Wireshark** — for packet capture/analysis once you have the capture.
+
+These are for legitimate site surveys, troubleshooting, and capacity planning — not for covert tracking.
+
+---
+
+# Enterprise/Provider methods (legitimate remote visibility)
+
+If you manage the network or have authorization, these will give authoritative info remotely:
+
+* **Wi‑Fi controller dashboards** (UniFi Controller, Aruba Central, Cisco DNA Center, Ruckus Cloud) — show connected clients, SSIDs being advertised, MACs/BSSIDs, and historical association logs for APs you control.
+* **Mobile Device Management (MDM) and EMM** — can show device last‑seen Wi‑Fi details for enrolled devices (suitable for corporate device recovery).
+* **ISP / Hosted network provider logs** — ISPs or managed service providers can provide authorized logs or records if you have legal process.
+
+---
+
+# Practical, safe use cases & alternatives
+
+If your goal is legitimate, choose one of these paths:
+
+* **Lost/stolen device you own** — use the platform’s recovery (Google “Find My Device”, Apple “Find My”) rather than trying to track via SSID/BSSID databases.
+* **Corporate inventory / security research** — use your Wi‑Fi controller logs, run authorized scans on your netblocks, or use MLS/enterprise geolocation via a developer account.
+* **Academic / public research** — use WiGLE or MLS with appropriate ethics review and only publish aggregated/anonymized results.
+
+---
+
+# How to proceed safely / minimal examples
+
+* For **research**: create accounts on WiGLE and MLS, read their acceptable use policies, and limit queries to aggregated, non‑identifying analysis.
+* For **device recovery**: use official find‑my‑device flows (they tie to the device owner’s account).
+* For **network inventory**: pull logs from your Wi‑Fi controller or request authorized logs from the ISP/provider.
+
+If you want, I can:
+
+* summarize WiGLE’s public API capabilities and typical query patterns (high‑level, with safety reminders); or
+* show how to use **Mozilla Location Service** to convert a set of observed BSSIDs into a geolocation (high‑level, for legitimate app development); or
+* recommend which on‑site scanning tool to use for a lawful site survey and give a short tutorial.
+
+Which of those would be most useful — WiGLE API summary, MLS positioning flow, or an on‑site tool tutorial?
