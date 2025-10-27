@@ -15,3 +15,4 @@
 * Nmap NSE & scripting resources — [https://nmap.org/book/nse.html](https://nmap.org/book/nse.html)
 
 
+https://www.bing.com/ck/a?!&&p=011f85581af24423974b9813ad238ccc632df3b8e72212d7d157376f826d1e92JmltdHM9MTc2MTUyMzIwMA&ptn=3&ver=2&hsh=4&fclid=00a8c485-e5d8-6d0d-1b02-d2cee44a6cef&psq=wifi+network+enumeration&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL3dpbmRvd3MvdXdwL2RldmljZXMtc2Vuc29ycy9lbnVtZXJhdGUtZGV2aWNlcy1vdmVyLWEtbmV0d29yaw
