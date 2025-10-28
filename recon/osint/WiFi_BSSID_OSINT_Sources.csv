@@ -1,0 +1,25 @@
+Source / Tool,Type,What it gives / Use
+WiGLE.net,Community DB,Global SSID/BSSID + GPS; best public map for Wi-Fi APs.
+Mozilla Location Service (MLS),API,Geolocation of BSSID via open API; cell + Wi-Fi hybrid data.
+Mylnikov.org,API,Free endpoint returning approximate coordinates for BSSID.
+OpenCellID,API / DB,Crowdsourced GSM/CDMA/LTE + Wi-Fi positioning data.
+Radiocells.org,Open DB,Mirror of OpenCellID; offers JSON exports of Wi-Fi and cell towers.
+Apple Wi-Fi DB,Proprietary,Used by iOS/macOS for location; not directly public but inferred from scans.
+Shodan,Search engine,"Find APs, routers, or IoT by geo-location or device fingerprint."
+Censys,Search engine,Index of exposed hosts; find APs or Wi-Fi routers in given city/coords.
+ZoomEye,Search engine,Alternative to Shodan; includes geo searches and device banners.
+FOFA,Search engine,"Chinese OSINT scanner; find Wi-Fi devices, IoT gateways, routers."
+Kismet,Wardriving / sniffing,"Captures SSID/BSSID, channel, GPS; exports logs for WiGLE upload."
+Airodump-ng,Passive capture,Gathers SSID/BSSID/channel info; local network survey.
+Vistumbler,Scanner,Windows GUI tool for visualizing nearby Wi-Fi APs and signal maps.
+Acrylic Wi-Fi,Analyzer,Windows-based; maps nearby APs with encryption and vendor info.
+Bettercap,Network toolkit,Capture and analyze Wi-Fi/Bluetooth traffic; customizable scripts.
+Scapy scripts,Custom scripting,Python-based packet capture and filtering; passive reconnaissance.
+Wigle Wi-Fi App,Mobile wardriving,Android app that collects and uploads Wi-Fi data to WiGLE.
+OUI lookup (IEEE),Reference,Maps BSSID prefixes to vendor names; useful for ISP or router identification.
+OpenStreetMap (OSM),Mapping,Wi-Fi hotspots and locations tagged with `amenity=wifi`.
+Google Maps / Street View,Visual mapping,"Indirect Wi-Fi infrastructure clues (antennas, signs, hotspots)."
+Correlation Workflow,Methodology,Combine MLS + WiGLE + Mylnikov + OUI + Shodan to triangulate and verify.
+Geo IP + ASN lookup,OSINT method,Correlate Wi-Fi vendor IPs with ASNs or ISP allocations for confirmation.
+Google Dorks,Search technique,"Find public Wi-Fi scan data, wardriving logs, or exposed router info."
+Public GitHub / Pastebin,Data source,"Occasional leaked wardriving datasets, SSID/BSSID lists."
