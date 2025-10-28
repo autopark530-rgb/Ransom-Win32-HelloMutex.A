@@ -1,6 +1,0 @@
-Here are relevant DoS/DDoS-related CVEs for Windows and macOS network components. Patch and monitor these vectors.
-	1.	CVE-2024-49113 — Windows LDAP denial-of-service (LDAPNightmare). High-impact DoS against Active Directory/LDAP services. Patch and block public LDAP where possible.  ￼
-	2.	CVE-2024-38233 — Windows Networking denial-of-service. Network stack memory/null-pointer style DoS; affects reachable Windows hosts. Prioritize MS updates.  ￼
-	3.	CVE-2024-44183 — Apple mDNSResponder logic error leading to DoS on macOS. Affects Bonjour/mDNS service on macOS. Apply Apple updates.  ￼
-	4.	CVE-2023-38039 — curl header DoS (affects bundled curl in some Windows builds/apps). Upgrade curl or vendor components that embed it. Useful for app-level network DoS.  ￼
-	5.	CVE-2023-29552 — Service Location Protocol (SLP) amplification/DoS potential (UDP amplification). Relevant for network devices and services that implement SLP. Filter/block at perimeter.  ￼
