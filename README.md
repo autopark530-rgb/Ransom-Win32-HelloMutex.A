@@ -1,4 +1,4 @@
-# README.md
+
 
 # Legacy systems & recent high-impact ransomware cases (2024–2025)
 
